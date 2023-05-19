@@ -1,70 +1,96 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Budget-Buddy
 
-## Available Scripts
+## Budget-Buddy is a expenses-tracker web app build using React JS library.
 
-In the project directory, you can run:
+## Technologies Used : 
+- React JS 
 
-### `npm start`
+## Software Required :
+- NodeJS
+- VS Code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Welcome Landing Page.
+- Button To add New expenses
+- A Graph showing expenses.
+- Filter option according to the Year.
+- List of all expenses added.
+- Date option to set expense done date.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instructions
+- First extract the whole repository.
+- Install project with npm.
+`npm install`
+- Run the React server by runnning following command.
+`npm start`
 
-### `npm test`
+## Technologies Used in project.
+Django Framework (Backend)
+HTML, CSS, JS (FrontEnd)
+Django REST (API Fetching.)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- Welcome Landing Page
+- Products Category Page.
+- About Us Page.
+- Contact Us page.
+- User Profile.
+- User Login and Register.
+- Add To Cart & Buy Now option.
+- RazorPay Payment Option.
+- Mobile Searching.
+- Change Passowrd.
 
-### `npm run build`
+## Software Required.
+- Django
+- Python (Version - 3.10.7)
+- VS Code
+- Postgres
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation Steps
+- Install all the required softwares properly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open the "mobileStop" folder in any code editor (Ex: VS Code).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Now open the terminal in the editor.
 
-### `npm run eject`
+To install all of Python's required packages and libraries, we must execute:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```cmd
+pip install -r requirements.txt (For windows)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+pip3 install -r requirements.txt (For Mac)
+```
+- After the installation of all packages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Setup Postgres by :-
+```code
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": <NAME_OF_YOUR_DATABASE>,
+        "USER": "postgres",
+        "PASSWORD": <PASSWORD>,
+        "HOST": "localhost",
+        "PORT": "<PORT NO>",
+    }
+}
+```
+- After the database is created. Run the following commands for migrations.
+```cmd
+python manage.py makemigrations
+python manage.py migrate
+```
+- Now you can run the server by the command.
+```cmd
+python manage.py runserver
+```
+- A link will occur in terminal by clicking on it or simply type in your browser (Prefer - Chrome)
+```code
+localhost:8000
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Note**
+Create the Virtualenv for good practice.
+First register yourself, then Login
