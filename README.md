@@ -1,7 +1,7 @@
 
 # Budget-Buddy
 
-## Budget-Buddy is a expenses-tracker web app build using React JS library.
+### Budget-Buddy is a expenses-tracker web app build using React JS library.
 
 ## Technologies Used : 
 - React JS 
